@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <title>Propose Day</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: url('https://wallpapercave.com/wp/wp8963033.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+.protest-riot-regular {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            width: 2px;
+            height: 2px;
+            animation: blink linear infinite;
+        }
+
+        .glowing {
+            background: radial-gradient(circle, #fffb5e, transparent); /* Yellowish glow */
+            box-shadow: 0 0 10px rgba(255, 251, 94, 0.8); /* Yellowish glow */
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .click-text {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-size: 30px;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+        .intro-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-family: "Protest Riot", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            white-space: pre-line;
+            opacity: 0;
+            animation: fade-in 1s forwards;
+        }
+
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .line {
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .word {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: appear 0.5s forwards;
+        }
+
+        .letter {
+            display: inline-block;
+            opacity: 0;
+            transform-origin: bottom;
+            animation: appear 0.1s forwards;
+        }
+
+        @keyframes appear {
+            to {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .click-text {
+                font-size: 20px;
+            }
+            .intro-container {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="click-text">Click Anywhere</br>Use Earphones &#129323;</div>
+    <audio id="backgroundAudio" loop>
+        <source src="4.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="intro-container">
+        <div class="line">
+            <p>
+<span class="word">Everyday&nbsp;I&nbsp;cannot&nbsp;believe&nbsp;how&nbsp;lucky&nbsp;i&nbsp;am&nbsp;to&nbsp;get&nbsp;the&nbsp;impossible&nbsp;chance&nbsp;to&nbsp;get&nbsp;to&nbsp;know&nbsp;you.</span>
+<span class="word">I&nbsp;feel&nbsp;like&nbsp;I&nbsp;won&nbsp;the&nbsp;lottery&nbsp;getting&nbsp;to&nbsp;know&nbsp;you.&nbsp;It's&nbsp;like&nbsp;winning&nbsp;the&nbsp;"Impossible&nbsp;Chance"&nbsp;jackpot!</span>
+                <span class="word">I&nbsp;still&nbsp;wonder&nbsp;ki&nbsp;itni&nbsp;pyari&nbsp;si&nbsp;ladki&nbsp;ko&nbsp;mai&nbsp;pasand&nbsp;kaise&nbsp;aa&nbsp;gya&nbsp;kaise&nbsp;possible&nbsp;h&nbsp;yai</span>
+<span class="word">Every&nbsp;day,&nbsp;my&nbsp;favorite&nbsp;highlight&nbsp;is&nbsp;hitting&nbsp;you&nbsp;up&nbsp;with&nbsp;a&nbsp;text.</span>
+<span class="word">Every&nbsp;night,&nbsp;when&nbsp;things&nbsp;get&nbsp;kinda&nbsp;quiet,&nbsp;I&nbsp;grab&nbsp;my&nbsp;phone&nbsp;and&nbsp;see&nbsp;your&nbsp;name&nbsp;pop&nbsp;up.&nbsp;It's&nbsp;like&nbsp;our&nbsp;own&nbsp;little&nbsp;secret&nbsp;club,&nbsp;you&nbsp;know?</span>
+<span class="word">Consider&nbsp;this&nbsp;a&nbsp;pinky&nbsp;promise&nbsp;–&nbsp;no&nbsp;day&nbsp;without&nbsp;my&nbsp;texts.&nbsp;Whether&nbsp;it's&nbsp;a&nbsp;simple&nbsp;"Hii"&nbsp;or&nbsp;a&nbsp;full-blown&nbsp;heart&nbsp;spill</span>
+<span class="word">And&nbsp;guess&nbsp;what?&nbsp;I'm&nbsp;declaring&nbsp;a&nbsp;"No&nbsp;Escape"&nbsp;policy.&nbsp;Once&nbsp;you're&nbsp;in&nbsp;my&nbsp;life,&nbsp;you're&nbsp;stuck&nbsp;with&nbsp;me&nbsp;like&nbsp;gum&nbsp;on&nbsp;a&nbsp;shoe.</span>
+<span class="word">I’m&nbsp;clinging&nbsp;to&nbsp;you&nbsp;like&nbsp;a&nbsp;koala&nbsp;to&nbsp;its&nbsp;eucalyptus&nbsp;tree.</span>
+<span class="word">I&nbsp;want&nbsp;to&nbsp;promise&nbsp;you&nbsp;that&nbsp;there&nbsp;will&nbsp;be&nbsp;no&nbsp;day&nbsp;of&nbsp;your&nbsp;life&nbsp;when&nbsp;you&nbsp;will&nbsp;not&nbsp;find&nbsp;me&nbsp;by&nbsp;your&nbsp;side.</span>
+<span class="word">&nbsp;Sorry&nbsp;But&nbsp;itne&nbsp;sai&nbsp;time&nbsp;mai&nbsp;itta&nbsp;sa&nbsp;content&nbsp;hi&nbsp;likh&nbsp;skte&nbsp;tha&nbsp;nhi&nbsp;toh&nbsp;kaafi&nbsp;late&nbsp;ho&nbsp;jata</span>
+<span class="word">Mere&nbsp;liye&nbsp;yai&nbsp;krna&nbsp;hi&nbsp;abhi&nbsp;possible&nbsp;h&nbsp;baki&nbsp;syd&nbsp;jldi&nbsp;hi&nbsp;medical&nbsp;unit&nbsp;jane&nbsp;kai&nbsp;baare&nbsp;mai&nbsp;bhi&nbsp;soch&nbsp;saku</span>
+<span class="word">But&nbsp;tb&nbsp;tk&nbsp;kai&nbsp;liye&nbsp;intjar&nbsp;kr&nbsp;lo&nbsp;</span>
+
+<span class="word">Sorry,&nbsp;but&nbsp;i&nbsp;know&nbsp;ki&nbsp;abhi&nbsp;kafi&nbsp;late&nbsp;ho&nbsp;chuka&nbsp;h&nbsp;but&nbsp;still&nbsp;try&nbsp;krna&nbsp;toh&nbsp;bnta&nbsp;h</span>
+<span class="word">Sometimes&nbsp;miracles&nbsp;come&nbsp;to&nbsp;us&nbsp;in&nbsp;the&nbsp;form&nbsp;of&nbsp;good&nbsp;people&nbsp;with&nbsp;good&nbsp;intention&nbsp;and&nbsp;heart,&nbsp;like&nbsp;you&nbsp;came&nbsp;in&nbsp;my&nbsp;life</span>
+<span class="word">I&nbsp;know&nbsp;we&nbsp;are&nbsp;not&nbsp;that&nbsp;close&nbsp;but&nbsp;har&nbsp;roj&nbsp;thoda&nbsp;hi&nbsp;shi&nbsp;pr&nbsp;karib&nbsp;toh&nbsp;aa&nbsp;rhe&nbsp;h&nbsp;and&nbsp;before&nbsp;I&nbsp;fall&nbsp;asleep&nbsp;tonight&nbsp;you&nbsp;should&nbsp;probably&nbsp;know&nbsp;that</span>
+<span class="word">Every&nbsp;day&nbsp;I&nbsp;talk&nbsp;to&nbsp;you&nbsp;is&nbsp;a&nbsp;good&nbsp;day.&nbsp;Every&nbsp;day&nbsp;I&nbsp;don’t&nbsp;talk&nbsp;to&nbsp;you&nbsp;is&nbsp;a&nbsp;bad&nbsp;day.&nbsp;It’s&nbsp;as&nbsp;simple&nbsp;as&nbsp;that</span>
+<span class="word">Propose&nbsp;kr&nbsp;du&nbsp;reject</br>&nbsp;toh&nbsp;nhi&nbsp;krogi&nbsp;na...........</br>kr&nbsp;du&nbsp;kya&nbsp;?...........</span>
+<span class="word" id="clickMe">Click Me</span>
+
+
+            </p>
+        </div>
+        <!-- Add more lines and content as needed -->
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const introContainer = document.querySelector(".intro-container");
+            const words = introContainer.querySelectorAll(".word");
+            let delay = 0;
+
+            words.forEach((word) => {
+                const letters = word.innerText.split('');
+                word.innerHTML = ''; // Clear original content
+
+                letters.forEach((letter) => {
+                    const span = document.createElement('span');
+                    span.classList.add('letter');
+                    span.textContent = letter;
+                    span.style.animationDelay = `${delay}s`;
+                    delay += 0.1; // Adjust the delay as needed
+                    word.appendChild(span);
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const starsContainer = document.querySelector(".stars");
+
+            for (let i = 0; i < 800; i++) {
+                const star = document.createElement("div");
+                star.className = "star";
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+
+                // Add glowing effect to some stars
+                if (Math.random() < 0.14) { // Adjust the probability as needed
+                    star.classList.add("glowing");
+                    star.style.width = "6px";
+                    star.style.height = "6px";
+                }
+
+                star.style.animationDuration = `${Math.random() * 1 + 1}s`; // Random blink duration between 1s and 2.5s
+                starsContainer.appendChild(star);
+            }
+        });
+
+        document.addEventListener("click", function () {
+            const audio = document.getElementById("backgroundAudio");
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // ... existing code ...
+
+        // Add click event listener to "Click Me" span
+        const clickMe = document.getElementById("clickMe");
+        clickMe.addEventListener("click", function () {
+            // Redirect to the new HTML file
+            window.location.href = "new.html";
+        });
+    });
+</script>
+</body>
+</html>
